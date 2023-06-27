@@ -8,10 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var avatarImageView: UIImageView!
+    @IBAction func onQRCodeButtonTapped() {
+        nameLabel.text = "New Name"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        avatarImageView.layer.cornerRadius = 40
     }
 
 
